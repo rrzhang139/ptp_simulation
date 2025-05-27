@@ -46,6 +46,33 @@ To evaluate action predictability:
 ./eval.sh
 ```
 
+## What to Expect
+
+When you run the evaluation script, you will see output measuring action predictability for both the policy and the expert. The key metrics are:
+
+- **ε_pi (policy):** The mean-squared error when the policy predicts the next action, given the past.
+- **ε_pi★ (expert):** The mean-squared error when the expert predicts the next action, given the past.
+- **ratio (ε_star / ε_pi):** The ratio of expert to policy error. This indicates how much the policy relies on past information compared to the expert.
+
+Example outputs:
+
+**Without PTP:**
+```
+========== ACTION PREDICTABILITY ==========
+ε_pi   (policy)  = 0.025819
+ε_pi★  (expert)  = 0.013152
+ratio  (ε_star / ε_pi) = 0.509
+```
+
+**With PTP:**
+```
+========== ACTION PREDICTABILITY ==========
+ε_pi   (policy)  = 0.012016
+ε_pi★  (expert)  = 0.013845
+ratio  (ε_star / ε_pi) = 1.152
+```
+
+
 ## File Structure
 
 - `train_ptp.py`: Main training script implementing PTP
