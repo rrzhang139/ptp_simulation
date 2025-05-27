@@ -66,3 +66,8 @@ If you find this code useful, please cite:
 }
 ```
 
+and
+
+[1] Gu, J., Xiang, F., Li, X., Ling, Z., Liu, X., Mu, T., Tang, Y., Tao, S., Wei, X., Yao, Y., Yuan, X., Xie, P., Huang, Z., Chen, R., & Su, H. (2023). ManiSkill2: A Unified Benchmark for Generalizable Manipulation Skills. ICLR 2023. https://arxiv.org/abs/2302.04659
+
+
