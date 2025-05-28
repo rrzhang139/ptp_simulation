@@ -1,0 +1,12 @@
+torch==2.1.2
+tensorboard
+wandb
+opencv-python
+pytest
+moviepy
+einops
+diffusers
+mani-skill2==0.5.3
+gymnasium==0.29.1
+gymnasium-robotics==1.2.4
+stable-baselines3==2.2.1
